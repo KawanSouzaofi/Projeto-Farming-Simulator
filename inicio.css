@@ -1,0 +1,52 @@
+.botões {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(204, 253, 113);
+    padding: 10px;
+}
+
+.botões a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 20px;
+    
+    border: 50%; /* Faz a borda ficar circular */
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+    width: 380px; /* Define uma largura fixa para os botões */
+    height: 120px; /* Define uma altura fixa para os botões */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura */
+}
+
+.botões a:hover {
+    background-color: #c3ffb1;
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao passar o mouse */
+}
+
+.botões h1, .botões h2, .botões h3, .botões h4 {
+    margin: 0;
+    font-size: 16px; /* Ajusta o tamanho da fonte conforme necessário */
+}
+
+/* Ajusta o tamanho da fonte para cada elemento */
+.botões h1 {
+    font-size: 18px;
+}
+
+.botões h4 {
+    font-size: 14px;
+}
+
+.botões h2 {
+    font-size: 16px;
+}
+
+.botões h3 {
+    font-size: 15px;
+}
