@@ -1,3 +1,5 @@
+body {background-color: rgb(224, 255, 231);}
+
 .botões {
     display: flex;
     justify-content: space-around;
@@ -15,10 +17,9 @@
     align-items: center;
     padding: 10px 20px;
     margin: 0 20px;
-    
-    border: 50%; /* Faz a borda ficar circular */
+    border-bottom: 100%; /* Faz a borda ficar circular */
     transition: all 0.3s ease; /* Transição suave para todos os efeitos */
-    width: 380px; /* Define uma largura fixa para os botões */
+    width: 450px; /* Define uma largura fixa para os botões */
     height: 120px; /* Define uma altura fixa para os botões */
     box-sizing: border-box; /* Inclui padding e border na largura e altura */
 }
@@ -34,19 +35,67 @@
     font-size: 16px; /* Ajusta o tamanho da fonte conforme necessário */
 }
 
-/* Ajusta o tamanho da fonte para cada elemento */
-.botões h1 {
-    font-size: 18px;
+.inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Ajuste a altura conforme necessário */
+    gap: 200px; /* Espaço entre os elementos */
 }
 
-.botões h4 {
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.imagem-circular {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagem-circular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.inicio h1, .inicio h2, .inicio h3 {
+    margin: 0; /* Remove a margem padrão */
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    text-align: center;
+    color: inherit; /* Remove a cor azul dos nomes */
+}
+
+.inicio h1 {
+    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.inicio h2 {
+    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.inicio h3 {
+    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.direitos {
+    padding: 10px;
+    text-align: center;
     font-size: 14px;
-}
-
-.botões h2 {
-    font-size: 16px;
-}
-
-.botões h3 {
-    font-size: 15px;
+    color: #6c757d;
 }
